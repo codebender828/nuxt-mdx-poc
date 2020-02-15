@@ -1,10 +1,10 @@
 <template functional>
   <div class="preview-code">
     <div class="preview-panel">
-      <slot name="preview"></slot>
+      <slot name="preview" />
     </div>
     <div class="editor-panel">
-      <slot name="editor"></slot>
+      <slot name="editor" />
     </div>
   </div>
 </template>
