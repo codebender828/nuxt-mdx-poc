@@ -2,7 +2,7 @@
   <main>
     <h1>Nuxt + MDX</h1>
 
-    <nuxt-link to="/test">
+    <nuxt-link to="/docs">
       Live Editor Example
     </nuxt-link>
 

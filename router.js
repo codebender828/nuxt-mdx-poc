@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Index from './docs/index.vue'
-import Test from './docs/test.mdx'
+import Docs from './docs/documentation.mdx'
 
 Vue.use(Router)
 
@@ -15,8 +15,8 @@ export function createRouter () {
         component: Index
       },
       {
-        path: '/test',
-        component: Test
+        path: '/docs',
+        component: Docs
       }
     ]
   })
