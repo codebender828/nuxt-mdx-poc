@@ -2,7 +2,7 @@
 
 > Demo project using MDX for documentation
 
-#### [Netlify Demo](Live Editor Example)
+**[Netlify Demo](Live Editor Example)**
 
 ### Features
 - SSR
