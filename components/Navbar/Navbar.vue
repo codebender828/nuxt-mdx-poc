@@ -11,7 +11,7 @@
       </li>
       <li class="link">
         <nuxt-link to="/docs">
-          Test
+          Live Editors
         </nuxt-link>
       </li>
       <li class="link">
