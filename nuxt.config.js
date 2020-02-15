@@ -1,6 +1,12 @@
 
 export default {
   mode: 'universal',
+  generate: {
+    routes: [
+      '/',
+      '/test'
+    ]
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
