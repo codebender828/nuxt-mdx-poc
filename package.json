@@ -1,0 +1,39 @@
+{
+  "name": "mdx-docs",
+  "version": "1.0.0",
+  "description": "My breathtaking Nuxt.js project",
+  "author": "codebender828",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "lint-staged": {
+    "*.{js,vue}": "yarn lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@mdx-js/vue-loader": "^1.5.5",
+    "@nuxtjs/router": "^1.5.0",
+    "nuxt": "^2.0.0",
+    "vue-live": "^1.5.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.1.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.0"
+  }
+}

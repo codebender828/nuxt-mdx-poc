@@ -1,0 +1,70 @@
+# Vue Live Editor Example
+import Vue from 'vue'
+import Count from '@/components/Count'
+import { LiveEditor } from '@/components'
+import Button from '@/components/Button'
+Vue.component('Button', Button)
+
+
+#  `Demo` example
+
+<LiveEditor>
+{`
+<template>
+  <div>
+    <h3>Count: {{ count }} </h3>
+    <button @click="increment">
+      Increase
+    </button>
+    <button @click="decrement">
+      Decrease
+    </button>
+  </div>
+</template>
+<script>
+  export default {
+    name: 'Count',
+    data () {
+      return {
+        count: 12
+      }
+    },
+    methods: {
+      increment () {
+        this.count++
+      },
+      decrement () {
+        this.count--
+      }
+    }
+  }
+<\/script>
+`}
+</LiveEditor>
+
+
+## Another Simple example
+
+<LiveEditor>
+{`
+let a = 1
+
+<input type="text" v-model="a" />
+<p>{{ a }}</p>
+`}
+</LiveEditor>
+
+
+## Button Component
+
+<LiveEditor>
+{`<div>
+  <Button>
+    Sign up
+  </Button>
+  <Button style="margin-left: 0; background: #ff0044">
+    Delete
+  </Button>
+</div>
+`}
+</LiveEditor>
