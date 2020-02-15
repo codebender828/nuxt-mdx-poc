@@ -29,6 +29,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/router'
   ],
+  transition: 'fade',
   build: {
     extend (config, ctx) {
       config.resolve.alias.vue = 'vue/dist/vue.common'

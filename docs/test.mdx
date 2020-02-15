@@ -13,12 +13,12 @@ Vue.component('Button', Button)
 <template>
   <div>
     <h3>Count: {{ count }} </h3>
-    <button @click="increment">
-      Increase
-    </button>
-    <button @click="decrement">
+    <Button style="background: tomato;" @click="decrement">
       Decrease
-    </button>
+    </Button>
+    <Button @click="increment">
+      Increase
+    </Button>
   </div>
 </template>
 <script>
@@ -47,10 +47,11 @@ Vue.component('Button', Button)
 
 <LiveEditor>
 {`
-let a = 1
+let name = 'codebender828'
 
-<input type="text" v-model="a" />
-<p>{{ a }}</p>
+<label for="name">Username</label>
+<input name="name" type="text" v-model="name" />
+<p>{{ name }}</p>
 `}
 </LiveEditor>
 
