@@ -14,6 +14,11 @@
           Test
         </nuxt-link>
       </li>
+      <li class="link">
+        <a href="https://github.com/codebender828/nuxt-mdx-poc">
+          Github Source Code
+        </a>
+      </li>
     </ul>
   </nav>
 </template>
